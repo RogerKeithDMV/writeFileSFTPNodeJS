@@ -1,0 +1,21 @@
+{
+  "title": "SFTPServerWriterConnection",
+  "description": "Write files in a sftp server.",
+  "docsUrl": "",
+  "buildType": "docker",
+  "credentials": {
+    "fields": {}
+  },
+  "triggers": {
+    "sftpwritedocumentsrnodejs": {
+      "title": "Write a file in a sftp server.",
+      "main": "./lib/triggers/processTrigger.js"
+    }
+  },
+  "actions": {
+    "getDataAction": {
+      "title": "Send information to another proccess",
+      "main": "./lib/actions/testAction.js"
+    }
+  }
+}
